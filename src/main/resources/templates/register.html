@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org">
+<title></title>
+<head></head>
+<body>
+	<form th:action="@{/registerSuccess}" method="post">
+		<table>
+			<tr>
+				<td>User Name</td>
+				<td><input type="text" name="name"></td>
+			</tr>
+			<tr>
+				<td>Email</td>
+				<td><input type="text" name="email"></td>
+			</tr>
+			<tr>
+				<td>Age</td>
+				<td><input type="number" name="age"></td>
+			</tr>
+			<tr>
+				<td>Country</td>
+				<td><select name="country">
+						<option value="Ghana">Ghana</option>
+						<option value="USA">USA</option>
+						<option value="Germany">Germany</option>
+						<option value="India">India</option>
+						<option value="Other">Other</option>
+				</select></td>
+			</tr>
+			<tr>
+				<td><input type="submit" value="Register"></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
